@@ -66,11 +66,11 @@
 
 .form__input {
   background-color: white;
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--color-woodsmoke-100);
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-md);
-  color: #1e1e1e;
+  color: var(--color-woodsmoke-800);
   font-family: var(--font-family-primary);
   line-height: 1;
   transition: border-color var(--transition-fast);
@@ -83,7 +83,7 @@
 
 .form__input--textarea {
   background-color: var(--color-background-secondary);
-  border-color: #f1e0b7;
+  border-color: var(--color-porsche-200);
   padding: var(--space-4);
   min-height: 119px;
   resize: vertical;

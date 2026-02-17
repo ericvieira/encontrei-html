@@ -41,8 +41,8 @@
 /* Secondary Button (Outline) */
 .button--secondary {
   background-color: transparent;
-  color: #837662;
-  border: 1px solid #837662;
+  color: var(--color-legacy-border);
+  border: 1px solid var(--color-legacy-border);
   padding: var(--space-2);
 }
 

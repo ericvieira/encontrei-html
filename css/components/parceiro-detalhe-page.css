@@ -20,7 +20,7 @@
 }
 
 .partner-detail__card {
-  background: #fff;
+  background: var(--color-background);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
 }
@@ -61,7 +61,7 @@
   align-items: center;
   gap: var(--space-6);
   padding-top: var(--space-4);
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--color-woodsmoke-75);
 }
 
 .partner-meta__item {
@@ -94,7 +94,7 @@
 }
 
 .partner-detail__share-card {
-  background: #fff;
+  background: var(--color-background);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
   text-align: center;

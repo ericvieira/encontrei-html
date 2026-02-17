@@ -91,7 +91,7 @@
   display: flex;
   gap: 0;
   margin-bottom: var(--space-4);
-  border-bottom: 1px solid #b2b2b2;
+  border-bottom: 1px solid var(--color-woodsmoke-350);
 }
 
 .forum-tabs__tab {
@@ -100,7 +100,7 @@
   padding: var(--space-1) var(--space-3);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
-  color: #767676;
+  color: var(--color-woodsmoke-600);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all var(--transition-fast);
@@ -113,8 +113,8 @@
 }
 
 .forum-tabs__tab--active {
-  color: #303030;
-  border-bottom-color: #303030;
+  color: var(--color-woodsmoke-700);
+  border-bottom-color: var(--color-woodsmoke-700);
 }
 
 /* Override form styles for criar-post page */
@@ -128,7 +128,7 @@
   border-radius: var(--radius-sm);
   font-size: var(--font-size-md);
   font-family: var(--font-family-primary);
-  color: #1e1e1e;
+  color: var(--color-woodsmoke-800);
 }
 
 .criar-post-card .form__input:focus,
