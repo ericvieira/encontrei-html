@@ -67,13 +67,13 @@
     <div class="forum-page__hero">
       <div class="container">
         <!-- Page Title -->
-        <div class="section-header">
-          <h1 class="section-header__title">Fórum</h1>
-          <p class="section-header__subtitle">Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros</p>
+        <div class="forum-page__header">
+          <h1 class="forum-page__title">Fórum</h1>
+          <p class="forum-page__subtitle">Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros</p>
         </div>
 
         <!-- Search Bar -->
-        <div class="search-bar">
+        <div class="search-bar forum-page__search">
           <svg class="search-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"/>
             <line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -135,9 +135,8 @@
                   name="content"
                   class="form__textarea"
                   rows="6"
-                  placeholder="Estou procurando livros que realmente capturem a essência da cultura brasileira para adicionar à minha coleção de lançamento. Alguma sugestão?"
                   required
-                ></textarea>
+                >Estou procurando livros que realmente capturem a essência da cultura brasileira para adicionar à minha coleção de lançamento. Alguma sugestão?</textarea>
               </div>
 
               <!-- Submit Button -->
@@ -154,47 +153,53 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__top">
+      <div class="footer__main">
         <div class="footer__brand">
           <div class="footer__logo">
-            <img src="assets/icons/logo/footer-criar-post.svg" alt="Encontrei Logo">
+            <img src="assets/icons/logo/footer-default.svg" alt="Encontrei Logo">
           </div>
-          <p class="footer__tagline">
-            Criando uma comunidade de leitores através de livros que viajam pelo mundo.
-            Deixe um livro, encontre um livro, junte-se à jornada.
+          <p class="footer__description">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo. Deixe um livro, encontre um livro, junte-se à jornada.
           </p>
         </div>
 
         <nav class="footer__nav">
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Navegue</h3>
             <ul class="footer__nav-list">
-              <li><a href="index.html">Descubra</a></li>
+              <li><a href="index.html" class="footer__nav-link">Início</a></li>
+              <li><a href="#" class="footer__nav-link">Descubra</a></li>
+              <li><a href="parceiros.html" class="footer__nav-link">Parceiros</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Sobre</h3>
             <ul class="footer__nav-list">
-              <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#" class="footer__nav-link">Nossa história</a></li>
+              <li><a href="#como-funciona" class="footer__nav-link">Como funciona</a></li>
+              <li><a href="parceiros.html" class="footer__nav-link">Cafés parceiros</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Comunidade</h3>
             <ul class="footer__nav-list">
-              <li><a href="#encontrar">Encontrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Registrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Encontrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Classificação</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Conecte-se</h3>
             <div class="footer__social">
-              <a href="#" aria-label="Instagram">instagram</a>
-              <a href="#" aria-label="Facebook">facebook</a>
-              <a href="#" aria-label="Twitter">twitter</a>
-              <a href="#" aria-label="Reddit">reddit</a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+              <a href="#" class="footer__social-link" aria-label="Reddit">Reddit</a>
             </div>
+            <a href="mailto:ola@acheipor.ai" class="footer__nav-link">ola@acheipor.ai</a>
           </div>
         </nav>
       </div>

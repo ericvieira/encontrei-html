@@ -7,6 +7,7 @@
   /* Colors - Primary Palette (Porsche - warm beige/brown tones) */
   --color-porsche-50: #fcf9f0;   /* Lightest background */
   --color-porsche-100: #f9f1db;  /* Card backgrounds */
+  --color-porsche-200: #f1e0b7;  /* Borders on beige inputs */
   --color-porsche-600: #c87d2e;  /* Primary accent/CTA */
   --color-porsche-900: #6c4122;  /* Footer text */
   --color-porsche-950: #3a2010;  /* Dark brown text */

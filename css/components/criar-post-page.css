@@ -3,19 +3,56 @@
  * Standalone create discussion page styling
  */
 
+.forum-page {
+  background-color: var(--color-background-secondary);
+}
+
+.forum-page__hero {
+  padding: var(--space-20) 0;
+}
+
+.forum-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.forum-page__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tightest);
+  line-height: var(--line-height-tight);
+}
+
+.forum-page__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-woodsmoke-400);
+  line-height: var(--line-height-normal);
+}
+
+.forum-page__search {
+  margin-bottom: var(--space-4);
+}
+
 .criar-post-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: none;
 }
 
 .criar-post-card {
   background-color: var(--color-porsche-100);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
 }
 
 .criar-post-card__header {
-  margin-bottom: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .criar-post-card__title {
@@ -38,27 +75,34 @@
   gap: var(--space-6);
 }
 
+.criar-post-form .form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
 .criar-post-form__actions {
   display: flex;
   justify-content: flex-end;
-  margin-top: var(--space-4);
 }
 
 /* Forum Tabs (shared between forum.html and criar-post.html) */
 .forum-tabs {
   display: flex;
   gap: 0;
-  margin-bottom: var(--space-6);
-  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: var(--space-4);
+  border-bottom: 1px solid #b2b2b2;
 }
 
 .forum-tabs__tab {
-  padding: var(--space-2) var(--space-3);
+  min-width: 120px;
+  text-align: center;
+  padding: var(--space-1) var(--space-3);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
-  color: var(--color-text-secondary);
+  color: #767676;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: all var(--transition-fast);
   position: relative;
   bottom: -1px;
@@ -69,9 +113,8 @@
 }
 
 .forum-tabs__tab--active {
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-medium);
-  border-bottom-color: var(--color-text-primary);
+  color: #303030;
+  border-bottom-color: #303030;
 }
 
 /* Override form styles for criar-post page */
@@ -80,6 +123,12 @@
 .criar-post-card .form__textarea {
   background-color: var(--color-porsche-50);
   border-color: var(--color-porsche-200);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-md);
+  font-family: var(--font-family-primary);
+  color: #1e1e1e;
 }
 
 .criar-post-card .form__input:focus,
@@ -91,6 +140,19 @@
 
 .criar-post-card .form__label {
   color: var(--color-porsche-950);
+}
+
+.criar-post-card .form__input,
+.criar-post-card .form__select {
+  padding: var(--space-4);
+  line-height: 1;
+}
+
+.criar-post-card .form__textarea {
+  padding: var(--space-4);
+  min-height: 119px;
+  line-height: var(--line-height-normal);
+  resize: vertical;
 }
 
 /* Select dropdown styling */
@@ -115,18 +177,41 @@
   color: var(--color-text-secondary);
 }
 
+.forum-page .search-bar {
+  background-color: var(--color-porsche-50);
+  border-color: var(--color-porsche-200);
+  margin-bottom: 0;
+}
+
+.forum-page .search-bar__icon {
+  color: var(--color-woodsmoke-300);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .forum-page__hero {
+    padding: var(--space-10) 0;
+  }
+
+  .forum-page__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .forum-page__subtitle {
+    font-size: var(--font-size-md);
+  }
+
   .criar-post-card {
     padding: var(--space-5);
   }
 
-  .criar-post-card__header {
-    margin-bottom: var(--space-6);
-  }
-
   .criar-post-card__title {
     font-size: var(--font-size-lg);
+  }
+
+  .forum-tabs__tab {
+    min-width: 0;
+    flex: 1;
   }
 
   .criar-post-form__actions {
