@@ -37,6 +37,7 @@
 @import url('./components/file-upload.css');
 @import url('./components/checkin-page.css');
 @import url('./components/criar-post-page.css');
+@import url('./components/login-page.css');
 
 /* 4. Custom Sections */
 .cta-section {
