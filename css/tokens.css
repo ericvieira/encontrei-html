@@ -19,6 +19,7 @@
   --color-woodsmoke-300: #b0b0b0;  /* Light gray */
   --color-woodsmoke-400: #888888;  /* Medium gray */
   --color-woodsmoke-500: #6d6d6d;  /* Darker gray */
+  --color-woodsmoke-50: #f6f6f6;   /* Light text on dark buttons */
 
   /* Colors - Semantic */
   --color-primary: var(--color-st-tropaz-600);
