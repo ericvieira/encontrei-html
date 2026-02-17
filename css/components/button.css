@@ -47,7 +47,7 @@
 }
 
 .button--secondary:hover {
-  background-color: rgba(131, 118, 98, 0.05);
+  background-color: color-mix(in srgb, var(--color-legacy-border) 5%, transparent);
 }
 
 /* Tertiary Button (Link style) */
