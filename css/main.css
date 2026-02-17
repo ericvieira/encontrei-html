@@ -38,6 +38,7 @@
 @import url('./components/checkin-page.css');
 @import url('./components/criar-post-page.css');
 @import url('./components/login-page.css');
+@import url('./components/cadastro-page.css');
 
 /* 4. Custom Sections */
 .cta-section {

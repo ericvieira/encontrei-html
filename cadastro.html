@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro - Encontrei por Aí">
+  <title>Cadastro | Encontrei</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+  <main class="cadastro-page">
+    <section class="cadastro-page__container" aria-labelledby="cadastro-title">
+      <div class="cadastro-page__logo">
+        <img src="assets/icons/logo/header-index.svg" alt="Encontrei Logo">
+      </div>
+
+      <div class="cadastro-page__heading">
+        <h1 id="cadastro-title" class="cadastro-page__title">Bem-vindo(a) de volta!</h1>
+        <p class="cadastro-page__subtitle">ou <a href="login.html">entre em uma conta existente</a></p>
+      </div>
+
+      <div class="cadastro-page__content">
+        <button type="button" class="cadastro-page__google-btn">
+          <span class="cadastro-page__google-icon">G</span>
+          <span>Continuar com Google</span>
+        </button>
+
+        <div class="cadastro-page__divider">ou</div>
+
+        <form class="cadastro-page__form" action="#" method="post">
+          <div class="cadastro-page__form-fields">
+            <div class="cadastro-page__form-group">
+              <label class="cadastro-page__label" for="signup-name">Seu nome</label>
+              <input
+                class="cadastro-page__input"
+                id="signup-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="Email ou nome de usuário"
+                required
+              >
+            </div>
+
+            <div class="cadastro-page__form-group">
+              <label class="cadastro-page__label" for="signup-user">Email ou nome de usuário</label>
+              <input
+                class="cadastro-page__input"
+                id="signup-user"
+                name="user"
+                type="text"
+                autocomplete="username"
+                placeholder="Email ou nome de usuário"
+                required
+              >
+            </div>
+
+            <div class="cadastro-page__form-group">
+              <label class="cadastro-page__label" for="signup-password">Senha</label>
+              <input
+                class="cadastro-page__input cadastro-page__input--password"
+                id="signup-password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="Crie uma senha forte"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="cadastro-page__actions">
+            <button type="submit" class="button button--primary">Criar conta</button>
+          </div>
+        </form>
+
+        <p class="cadastro-page__help">
+          Visite o <a href="#">Centro de Ajuda</a> para qualquer assistência
+          se você não conseguir fazer login na sua conta
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
