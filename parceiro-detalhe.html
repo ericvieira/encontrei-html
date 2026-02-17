@@ -95,51 +95,51 @@
     </div>
   </div>
 
-  <main style="background-color: var(--color-background-secondary);">
+  <main class="partner-detail-page">
     <section class="section">
       <div class="container">
 
         <!-- Back Button -->
-        <a href="parceiros.html" class="button button--secondary" style="margin-bottom: var(--space-6); display: inline-flex;">
+        <a href="parceiros.html" class="button button--secondary partner-detail__back-button">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M12 16l-6-6 6-6"/>
           </svg>
           Voltar
         </a>
 
-        <div style="display: grid; grid-template-columns: 1fr 400px; gap: var(--space-6); align-items: start;">
+        <div class="partner-detail__layout">
 
           <!-- Main Content -->
           <div>
 
             <!-- Partner Info -->
-            <div style="background: white; border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6);">
-              <h1 class="heading-2" style="color: var(--color-primary); margin-bottom: var(--space-2);">Café Cultura</h1>
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-1);">
+            <div class="partner-detail__card partner-detail__card--info">
+              <h1 class="heading-2 partner-detail__title">Café Cultura</h1>
+              <p class="partner-detail__location">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                   <path d="M8 2a4 4 0 00-4 4c0 2.5 4 8 4 8s4-5.5 4-8a4 4 0 00-4-4zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
                 </svg>
                 R. Mariz e Barros - Icaraí
               </p>
 
-              <p style="font-size: var(--font-size-md); color: var(--color-text-secondary); line-height: var(--line-height-normal); margin-bottom: var(--space-4);">
+              <p class="partner-detail__description">
                 Um café acolhedor com uma extensa biblioteca dedicada à troca de livros onde os visitantes podem desfrutar de uma excelente bebida. Aproveite um café especial enquanto explora a coleção.
               </p>
 
               <!-- Amenities -->
-              <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
+              <div class="partner-detail__badges">
                 <span class="profile-card__badge">Wi-Fi Grátis</span>
                 <span class="profile-card__badge">Área Externa</span>
                 <span class="profile-card__badge">Troca de livros</span>
               </div>
 
               <!-- Meta Info -->
-              <div style="display: flex; align-items: center; gap: var(--space-6); padding-top: var(--space-4); border-top: 1px solid #f0f0f0;">
-                <div style="display: flex; align-items: center; gap: var(--space-1); color: var(--color-text-secondary);">
+              <div class="partner-meta">
+                <div class="partner-meta__item">
                   <img src="assets/icons/ui/clock.svg" alt="" width="20" height="20">
                   <span>8:00 - 20:00</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: var(--space-1); color: var(--color-text-secondary);">
+                <div class="partner-meta__item">
                   <img src="assets/icons/ui/call.svg" alt="" width="20" height="20">
                   <span>(21) 9837-3687</span>
                 </div>
@@ -147,15 +147,15 @@
             </div>
 
             <!-- Events Section -->
-            <div style="background: white; border-radius: var(--radius-lg); padding: var(--space-6);">
-              <div class="tabs" role="tablist" style="margin-bottom: var(--space-6);">
+            <div class="partner-detail__card">
+              <div class="tabs partner-detail__tabs" role="tablist">
                 <button class="tabs__tab tabs__tab--active" role="tab">Eventos</button>
                 <button class="tabs__tab" role="tab">Comunidade</button>
               </div>
 
-              <h2 style="font-size: var(--font-size-xl); font-weight: var(--font-weight-medium); margin-bottom: var(--space-4);">Eventos próximos</h2>
+              <h2 class="partner-detail__events-title">Eventos próximos</h2>
 
-              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4);">
+              <div class="partner-detail__events-grid">
 
                 <!-- Event Card 1 -->
                 <article class="event-card">
@@ -193,7 +193,7 @@
           </div>
 
           <!-- Sidebar -->
-          <aside style="display: flex; flex-direction: column; gap: var(--space-6);">
+          <aside class="partner-detail__sidebar">
 
             <!-- Check-in Widget -->
             <div class="checkin-widget">
@@ -319,9 +319,9 @@
             </div>
 
             <!-- Share Widget -->
-            <div style="background: white; border-radius: var(--radius-lg); padding: var(--space-6); text-align: center;">
-              <h3 style="font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); margin-bottom: var(--space-2);">Compartilhar</h3>
-              <p style="color: var(--color-text-secondary); margin-bottom: var(--space-4); font-size: var(--font-size-base);">
+            <div class="partner-detail__share-card">
+              <h3 class="partner-detail__share-title">Compartilhar</h3>
+              <p class="partner-detail__share-text">
                 Convide seus amigos para conhecer este local!
               </p>
               <button class="button button--secondary w-full">
