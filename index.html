@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encontrei - Descubra novas leituras e se conecte com a comunidade. Libere livros, acompanhe sua jornada e conecte-se com leitores.">
+  <title>Encontrei - Comunidade Literária de Niterói</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <img src="https://www.figma.com/api/mcp/asset/55630cd1-a3f5-4e98-9f20-221502a7cbba" alt="Encontrei Logo">
+      </div>
+
+      <nav class="header__nav" role="navigation">
+        <a href="#inicio" class="header__menu-item header__menu-item--active">
+          <img src="https://www.figma.com/api/mcp/asset/ab0b4dc6-456b-411e-9c98-02a7e40840b1" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Início</span>
+        </a>
+
+        <a href="#descubra" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Descubra</span>
+        </a>
+
+        <a href="parceiros.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/4ab388c3-14b6-423d-a327-7c7250417d50" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Parceiros</span>
+        </a>
+
+        <a href="forum.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/4122a994-7c57-424f-99a0-c42a95657dc3" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Fórum</span>
+        </a>
+
+        <a href="checkin.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/d583619b-8248-4d95-a2c3-00ad7aaabfbf" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Check-in</span>
+        </a>
+
+        <a href="perfil.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/cfa749c4-dae2-432d-9bb0-7db6c2aa37b2" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero__container">
+        <div class="hero__content-wrapper">
+          <!-- Decorative background -->
+          <img src="https://www.figma.com/api/mcp/asset/bacad897-712a-46d2-b290-f01f0cfdb092" alt="" class="hero__decoration" aria-hidden="true">
+
+          <div class="hero__text">
+            <div>
+              <h1 class="hero__title">Descubra novas leituras e se conecte com a comunidade</h1>
+              <p class="hero__description">Release your books into the wild. Track their journey. Connect with readers around Niterói and beyond.</p>
+            </div>
+
+            <div class="hero__actions">
+              <button class="button button--secondary">
+                Entrar
+                <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+              <button class="button button--primary">Cadastre-se</button>
+            </div>
+          </div>
+
+          <div class="hero__books">
+            <div class="hero__book">
+              <img src="https://www.figma.com/api/mcp/asset/9c52bfc9-d6ec-43a7-a1b1-492d2ca8896b" alt="Book cover">
+            </div>
+            <div class="hero__book">
+              <img src="https://www.figma.com/api/mcp/asset/727064b0-ed1f-4ef3-a5e4-3090b7084185" alt="Book cover">
+            </div>
+            <div class="hero__book">
+              <img src="https://www.figma.com/api/mcp/asset/409af06f-2a70-4001-a18c-bdc5ea7d6612" alt="Book cover">
+            </div>
+            <div class="hero__book">
+              <img src="https://www.figma.com/api/mcp/asset/773daf6b-9243-4f0c-a7ce-29f546f78564" alt="Book cover">
+            </div>
+            <div class="hero__book">
+              <img src="https://www.figma.com/api/mcp/asset/a29bd091-c901-41f1-acd7-a927dab493e0" alt="Book cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" style="background-color: var(--color-background-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__content">
+            <h2 class="section-header__title">Como funciona?</h2>
+            <p class="section-header__subtitle">Achei por aí é uma plataforma completa intuitiva etc e tal lorem impsum</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-2">
+          <div class="feature-card">
+            <div class="feature-card__header">
+              <img src="https://www.figma.com/api/mcp/asset/012bcf45-0bda-46ce-8baf-72956058a706" alt="" class="feature-card__icon">
+              <h3 class="feature-card__title">Registre seu livro</h3>
+            </div>
+            <p class="feature-card__description">Adicione seu livro ao nosso sistema e receba um código QR único para anexar antes de liberá-lo.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__header">
+              <img src="https://www.figma.com/api/mcp/asset/4d135e2c-0793-4223-a0a9-b96b7cb3ef40" alt="" class="feature-card__icon">
+              <h3 class="feature-card__title">Deixe-o em algum lugar</h3>
+            </div>
+            <p class="feature-card__description">Deixe seu livro em um dos nossos cafés parceiros em Niterói ou em qualquer lugar público de sua escolha.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__header">
+              <img src="https://www.figma.com/api/mcp/asset/d16518a3-0bb8-4a10-8751-f54a9985f018" alt="" class="feature-card__icon">
+              <h3 class="feature-card__title">Acompanhe a jornada</h3>
+            </div>
+            <p class="feature-card__description">Siga as aventuras do seu livro enquanto leitores o encontram, desfrutam e o passam para novos locais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Released Books Section -->
+    <section class="section" style="background-color: var(--color-background-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header__content">
+            <h2 class="section-header__title">Livros recém liberados</h2>
+            <p class="section-header__subtitle">Achei por aí é uma plataforma completa intuitiva etc e tal lorem impsum</p>
+          </div>
+          <a href="#" class="button button--tertiary section-header__cta">
+            Ver todos
+            <img src="https://www.figma.com/api/mcp/asset/4a9ee31c-2ac2-448e-956f-b76363f9c0a2" alt="" class="button__icon">
+          </a>
+        </div>
+
+        <div class="grid grid-cols-4 gap-2">
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/21550b34-4b34-41c5-a4dc-004a4f3af15c" alt="O ato criativo: uma forma de ser" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">O ato criativo: uma forma de ser</h3>
+              <p class="book-card__author">Rick Rubin</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/19a8e99c-9372-4b57-8e71-60d04307eb13" alt="Como fazer amigos e influenciar pessoas" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Como fazer amigos e influenciar pessoas</h3>
+              <p class="book-card__author">Dale Carnegie</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/598e88d0-33b6-4635-9f49-416ad90e7d54" alt="O Homem Mais Rico da Babilônia" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">O Homem Mais Rico da Babilônia</h3>
+              <p class="book-card__author">George S. Clason</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/e0df567c-b0c1-4287-b26d-47fe7cb856e9" alt="Pai Rico Pai pobre" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Pai Rico Pai pobre</h3>
+              <p class="book-card__author">Robert T.</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/34939990-e34a-4872-9f38-448195ad1f8a" alt="Pense como a Amazon" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Pense como a Amazon</h3>
+              <p class="book-card__author">John Rossman</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/682f9543-2544-40c3-83ab-0937accb83a3" alt="Enviesados: Psicologia e Vieses" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Enviesados: Psicologia e Vieses</h3>
+              <p class="book-card__author">Rian Dutra</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/cc07c9bd-e76a-4925-98fe-747f69b2e4a6" alt="Não me Faça Pensar: Atualizado" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Não me Faça Pensar: Atualizado</h3>
+              <p class="book-card__author">Steve Krug</p>
+            </div>
+          </div>
+
+          <div class="book-card">
+            <div class="book-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/19a8e99c-9372-4b57-8e71-60d04307eb13" alt="Como fazer amigos e influenciar pessoas" class="book-card__image">
+            </div>
+            <div class="book-card__info">
+              <h3 class="book-card__title">Como fazer amigos e influenciar pessoas</h3>
+              <p class="book-card__author">Dale Carnegie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Spaces Section -->
+    <section id="parceiros" class="section" style="background-color: var(--color-background-secondary); position: relative;">
+      <!-- Decorative background -->
+      <img src="https://www.figma.com/api/mcp/asset/3027ad0d-30c9-4654-9a70-56113c5fd4c1" alt="" style="position: absolute; left: -72px; top: -13px; width: 809px; height: 710px; opacity: 0.3; pointer-events: none;" aria-hidden="true">
+
+      <div class="container" style="position: relative; z-index: 1;">
+        <div class="section-header">
+          <div class="section-header__content">
+            <h2 class="section-header__title">Espaços parceiros</h2>
+            <p class="section-header__subtitle">Achei por aí é uma plataforma completa intuitiva etc e tal lorem impsum</p>
+          </div>
+          <a href="#" class="button button--tertiary section-header__cta">
+            Ver todos
+            <img src="https://www.figma.com/api/mcp/asset/4a9ee31c-2ac2-448e-956f-b76363f9c0a2" alt="" class="button__icon">
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/9cdc9047-1695-4a0a-bd53-8fbaba77abc4" alt="Café Cultura" class="partner-card__image">
+              <span class="partner-card__badge">Cafeteria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Café Cultura</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/25226db2-f45a-4279-a1f5-f9c90259cdf5" alt="Livaria Intinerante" class="partner-card__image">
+              <span class="partner-card__badge">Livraria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Livaria Intinerante</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/1ad80175-edde-4880-8caa-a4404e63a568" alt="Confeitaria Guanabara" class="partner-card__image">
+              <span class="partner-card__badge">Confeitaria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Confeitaria Guanabara</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/9cdc9047-1695-4a0a-bd53-8fbaba77abc4" alt="Café Cultura" class="partner-card__image">
+              <span class="partner-card__badge">Cafeteria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Café Cultura</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/25226db2-f45a-4279-a1f5-f9c90259cdf5" alt="Livaria Intinerante" class="partner-card__image">
+              <span class="partner-card__badge">Livraria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Livaria Intinerante</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+
+          <div class="partner-card">
+            <div class="partner-card__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/1ad80175-edde-4880-8caa-a4404e63a568" alt="Confeitaria Guanabara" class="partner-card__image">
+              <span class="partner-card__badge">Confeitaria</span>
+            </div>
+            <div class="partner-card__content">
+              <h3 class="partner-card__name">Confeitaria Guanabara</h3>
+              <p class="partner-card__address">R. Mariz e Barros - Icaraí</p>
+              <p class="partner-card__availability">5 livros disponíveis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-section__container">
+        <div class="cta-section__content">
+          <!-- Decorative background -->
+          <img src="https://www.figma.com/api/mcp/asset/b0b4636b-cad3-43de-8048-862e931cd86f" alt="" class="cta-section__decoration" aria-hidden="true">
+
+          <h2 class="cta-section__title">Junte-se à Nossa<br>Comunidade Literária</h2>
+          <p class="cta-section__description">Faça parte de um movimento crescente que conecta leitores, livros e negócios locais.</p>
+          <button class="button button--primary cta-section__button">Cadastre-se</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://www.figma.com/api/mcp/asset/ba9bc93d-7e54-4cae-9d2a-d47ed6b4b7c9" alt="Encontrei Logo">
+          </div>
+          <p class="footer__description">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo. Deixe um livro, encontre um livro, junte-se à jornada.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Navegue</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Início</a></li>
+              <li><a href="#" class="footer__nav-link">Descubra</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Sobre</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Como funciona</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Comunidade</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Encontrar um livro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Conecte-se</h3>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+              <a href="#" class="footer__social-link" aria-label="Reddit">Reddit</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Todos os direitos reservados - Encontrei por Aí | 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

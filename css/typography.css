@@ -1,0 +1,86 @@
+/**
+ * Typography Styles
+ * Base typography and text utilities
+ */
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-heading);
+}
+
+.heading-1 {
+  font-size: var(--font-size-3xl);
+  letter-spacing: var(--letter-spacing-tightest);
+}
+
+.heading-2 {
+  font-size: var(--font-size-2xl);
+  letter-spacing: var(--letter-spacing-tighter);
+}
+
+.heading-3 {
+  font-size: var(--font-size-xl);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Body Text */
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-base {
+  font-size: var(--font-size-md);
+}
+
+.text-sm {
+  font-size: var(--font-size-base);
+}
+
+.text-xs {
+  font-size: var(--font-size-sm);
+}
+
+/* Font Weights */
+.font-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Text Colors */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-heading {
+  color: var(--color-text-heading);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-muted {
+  color: var(--color-woodsmoke-300);
+}

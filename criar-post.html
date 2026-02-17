@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Criar nova discussão no fórum da comunidade Encontrei">
+  <title>Criar Post | Fórum | Encontrei</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="https://www.figma.com/api/mcp/asset/02afb9f1-a8c1-4c9b-8b20-582c843bc48d" alt="Encontrei Logo">
+        </a>
+      </div>
+
+      <nav class="header__nav" role="navigation">
+        <a href="index.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/794a91d4-7ab5-41da-9e48-fa4dbcf4cc22" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Início</span>
+        </a>
+
+        <a href="#descubra" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Descubra</span>
+        </a>
+
+        <a href="parceiros.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/d17a4cde-4f6c-41fa-b915-0c6c00450dff" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Parceiros</span>
+        </a>
+
+        <a href="forum.html" class="header__menu-item header__menu-item--active">
+          <img src="https://www.figma.com/api/mcp/asset/24257be1-60d8-4a46-b1bd-8a3565a21d91" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Fórum</span>
+        </a>
+
+        <a href="checkin.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/f8e87cfd-2338-4ceb-923b-9530af2cfd6e" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Check-in</span>
+        </a>
+
+        <a href="perfil.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/cdf8cbd7-7981-417b-8297-c2578fc6b458" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="forum-page">
+    <div class="forum-page__hero">
+      <div class="container">
+        <!-- Page Title -->
+        <div class="section-header">
+          <h1 class="section-header__title">Fórum</h1>
+          <p class="section-header__subtitle">Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <svg class="search-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" class="search-bar__input" placeholder="Buscar" id="forumSearch">
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="forum-tabs">
+          <a href="forum.html" class="forum-tabs__tab">Discussões</a>
+          <a href="criar-post.html" class="forum-tabs__tab forum-tabs__tab--active">Criar post</a>
+        </div>
+
+        <!-- Create Post Form -->
+        <div class="criar-post-wrapper">
+          <div class="criar-post-card">
+            <div class="criar-post-card__header">
+              <h2 class="criar-post-card__title">Criar uma Nova Discussão</h2>
+              <p class="criar-post-card__description">
+                Compartilhe seus pensamentos, perguntas ou histórias com a comunidade Achei por Aí
+              </p>
+            </div>
+
+            <form id="criarPostForm" class="criar-post-form">
+              <!-- Title -->
+              <div class="form__group">
+                <label for="discussionTitle" class="form__label">Título da Discussão</label>
+                <input
+                  type="text"
+                  id="discussionTitle"
+                  name="title"
+                  class="form__input"
+                  placeholder="O que você gostaria de discutir?"
+                  required
+                >
+              </div>
+
+              <!-- Category -->
+              <div class="form__group">
+                <label for="discussionCategory" class="form__label">Categoria</label>
+                <div class="form__select-wrapper">
+                  <select id="discussionCategory" name="category" class="form__select" required>
+                    <option value="livros">Discussões de livros</option>
+                    <option value="locais">Locais de liberação</option>
+                    <option value="eventos">Encontros & Eventos</option>
+                    <option value="geral">Geral</option>
+                  </select>
+                  <svg class="form__select-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="form__group">
+                <label for="discussionContent" class="form__label">Conteúdo</label>
+                <textarea
+                  id="discussionContent"
+                  name="content"
+                  class="form__textarea"
+                  rows="6"
+                  placeholder="Estou procurando livros que realmente capturem a essência da cultura brasileira para adicionar à minha coleção de lançamento. Alguma sugestão?"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="criar-post-form__actions">
+                <button type="submit" class="button button--primary">Postar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://www.figma.com/api/mcp/asset/6fcc0ed0-b308-4290-9ea5-a4cba97d8e17" alt="Encontrei Logo">
+          </div>
+          <p class="footer__tagline">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo.
+            Deixe um livro, encontre um livro, junte-se à jornada.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Navegue</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html">Descubra</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Sobre</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#como-funciona">Como funciona</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Comunidade</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#encontrar">Encontrar um livro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Conecte-se</h3>
+            <div class="footer__social">
+              <a href="#" aria-label="Instagram">instagram</a>
+              <a href="#" aria-label="Facebook">facebook</a>
+              <a href="#" aria-label="Twitter">twitter</a>
+              <a href="#" aria-label="Reddit">reddit</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Todos os direitos reservados - Encontrei por Aí | 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/criar-post.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

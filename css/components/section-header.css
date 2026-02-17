@@ -1,0 +1,60 @@
+/**
+ * Section Header Component
+ * Page section titles with optional CTA
+ */
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+}
+
+.section-header__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.section-header__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tightest);
+  line-height: var(--line-height-tight);
+}
+
+.section-header__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.section-header__cta {
+  flex-shrink: 0;
+}
+
+/* Centered variant */
+.section-header--center {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 48em) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-header__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .section-header__subtitle {
+    font-size: var(--font-size-md);
+  }
+}

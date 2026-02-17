@@ -1,0 +1,97 @@
+/**
+ * Main Stylesheet
+ * Imports all CSS files in the correct order
+ */
+
+/* 1. Reset & Base */
+@import url('./reset.css');
+@import url('./tokens.css');
+@import url('./typography.css');
+
+/* 2. Layout */
+@import url('./layout.css');
+@import url('./utilities.css');
+
+/* 3. Components */
+@import url('./components/header.css');
+@import url('./components/button.css');
+@import url('./components/hero.css');
+@import url('./components/section-header.css');
+@import url('./components/feature-card.css');
+@import url('./components/book-card.css');
+@import url('./components/partner-card.css');
+@import url('./components/footer.css');
+@import url('./components/profile-card.css');
+@import url('./components/activity-feed.css');
+@import url('./components/tabs.css');
+@import url('./components/form.css');
+@import url('./components/search-bar.css');
+@import url('./components/partner-card-detailed.css');
+@import url('./components/photo-gallery.css');
+@import url('./components/review-card.css');
+@import url('./components/event-card.css');
+@import url('./components/checkin-widget.css');
+@import url('./components/discussion-card.css');
+@import url('./components/category-tabs.css');
+@import url('./components/star-rating.css');
+@import url('./components/file-upload.css');
+@import url('./components/checkin-page.css');
+@import url('./components/criar-post-page.css');
+
+/* 4. Custom Sections */
+.cta-section {
+  background-color: var(--color-background-secondary);
+  width: 100%;
+  padding: var(--space-20) var(--space-4);
+}
+
+.cta-section__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.cta-section__content {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section__decoration {
+  position: absolute;
+  left: 290px;
+  top: -161px;
+  width: 617px;
+  height: 618px;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.cta-section__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tighter);
+  line-height: var(--line-height-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section__description {
+  font-size: var(--font-size-lg);
+  color: var(--color-woodsmoke-500);
+  line-height: var(--line-height-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.cta-section__button {
+  position: relative;
+  z-index: 1;
+}

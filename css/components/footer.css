@@ -1,0 +1,124 @@
+/**
+ * Footer Component
+ * Site footer with navigation and info
+ */
+
+.footer {
+  background-color: var(--color-porsche-100);
+  width: 100%;
+}
+
+.footer__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-20) var(--space-4);
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-10);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid rgba(108, 65, 34, 0.1);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 502px;
+}
+
+.footer__logo {
+  height: 41.672px;
+  width: 135px;
+}
+
+.footer__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.footer__description {
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-900);
+  line-height: var(--line-height-normal);
+}
+
+.footer__nav {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.footer__nav-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer__nav-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-porsche-900);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--space-2);
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer__nav-link {
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-900);
+  padding: var(--space-1);
+  transition: color var(--transition-fast);
+}
+
+.footer__nav-link:hover {
+  color: var(--color-accent);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.footer__social-link {
+  color: var(--color-porsche-900);
+  transition: color var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  color: var(--color-accent);
+}
+
+.footer__bottom {
+  padding-top: var(--space-6);
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-900);
+  line-height: var(--line-height-normal);
+}
+
+/* Responsive */
+@media (max-width: 64em) {
+  .footer__main {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav-column {
+    flex: 1 1 45%;
+  }
+}

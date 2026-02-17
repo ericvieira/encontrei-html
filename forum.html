@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fórum - Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros">
+  <title>Fórum | Encontrei</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="https://www.figma.com/api/mcp/asset/56f0eee5-78a7-46d5-9bce-003e99702929" alt="Encontrei Logo">
+        </a>
+      </div>
+
+      <nav class="header__nav" role="navigation">
+        <a href="index.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/f8cff7d9-fe21-48ef-827a-775b98bd738c" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Início</span>
+        </a>
+
+        <a href="#descubra" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Descubra</span>
+        </a>
+
+        <a href="parceiros.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/cc190de8-e229-45d0-8ec3-0a3df0e6cde1" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Parceiros</span>
+        </a>
+
+        <a href="forum.html" class="header__menu-item header__menu-item--active">
+          <img src="https://www.figma.com/api/mcp/asset/c804fac2-a0b4-45eb-8f98-f46a68bbd819" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Fórum</span>
+        </a>
+
+        <a href="checkin.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/149bbb91-5b3a-456f-b174-cb8390eca2f5" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Check-in</span>
+        </a>
+
+        <a href="perfil.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/31e098c1-7254-4904-81de-c20c45509982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="background-color: var(--color-background-secondary); min-height: calc(100vh - 94px);">
+    <section class="section">
+      <div class="container" style="max-width: 900px;">
+
+        <!-- Page Header -->
+        <div style="margin-bottom: var(--space-8);">
+          <h1 class="heading-1" style="color: var(--color-primary); margin-bottom: var(--space-2);">Fórum</h1>
+          <p class="text-lg" style="color: var(--color-text-secondary);">Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar" style="margin-bottom: var(--space-6);">
+          <svg class="search-bar__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="8" cy="8" r="6"/>
+            <path d="M14 14l4 4"/>
+          </svg>
+          <input type="text" class="search-bar__input" placeholder="Buscar" id="forum-search">
+        </div>
+
+        <!-- Forum Tabs Navigation -->
+        <div class="forum-tabs">
+          <a href="forum.html" class="forum-tabs__tab forum-tabs__tab--active">Discussões</a>
+          <a href="criar-post.html" class="forum-tabs__tab">Criar post</a>
+        </div>
+
+        <!-- Discussions Section -->
+        <div class="forum-discussions">
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+              <button class="category-tabs__tab category-tabs__tab--active" data-category="todos">Todos os tópicos</button>
+              <button class="category-tabs__tab" data-category="livros">Discussões de livros</button>
+              <button class="category-tabs__tab" data-category="locais">Locais de liberação</button>
+              <button class="category-tabs__tab" data-category="eventos">Encontros & Eventos</button>
+            </div>
+
+            <!-- Discussion Cards -->
+            <div id="discussions-list">
+
+              <!-- Discussion 1 -->
+              <article class="discussion-card" data-category="locais">
+                <div class="discussion-card__header">
+                  <img src="https://www.figma.com/api/mcp/asset/a50945c2-d5e2-4ba6-be18-9b0155cfad4f" alt="Clara Oliveira" class="discussion-card__avatar">
+                  <div class="discussion-card__header-content">
+                    <div class="discussion-card__title-row">
+                      <h2 class="discussion-card__title">Quais os melhores lugares para perder livros em Niterói?</h2>
+                      <span class="discussion-card__badge discussion-card__badge--local">Local</span>
+                    </div>
+                    <p class="discussion-card__meta">
+                      por <span class="discussion-card__author">Clara Oliveira</span> • 2 dias atrás
+                    </p>
+                  </div>
+                </div>
+
+                <p class="discussion-card__excerpt">
+                  Estou planejando liberar alguns livros neste fim de semana e queria saber quais são alguns bons lugares em Niterói onde pessoas que amam ler possam encontrá-los.
+                </p>
+
+                <div class="discussion-card__footer">
+                  <div class="discussion-card__stats">
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M3 3h12v9H9l-3 3V12H3V3z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M9 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                  </div>
+                  <button class="button button--secondary discussion-card__cta">Ver discussão</button>
+                </div>
+              </article>
+
+              <!-- Discussion 2 -->
+              <article class="discussion-card" data-category="livros">
+                <div class="discussion-card__header">
+                  <img src="https://www.figma.com/api/mcp/asset/a50945c2-d5e2-4ba6-be18-9b0155cfad4f" alt="João Santos" class="discussion-card__avatar">
+                  <div class="discussion-card__header-content">
+                    <div class="discussion-card__title-row">
+                      <h2 class="discussion-card__title">Recomendações de livros sobre cultura brasileira?</h2>
+                      <span class="discussion-card__badge discussion-card__badge--recomendacoes">Recomendações</span>
+                    </div>
+                    <p class="discussion-card__meta">
+                      por <span class="discussion-card__author">João Santos</span> • 2 dias atrás
+                    </p>
+                  </div>
+                </div>
+
+                <p class="discussion-card__excerpt">
+                  Estou procurando livros que realmente exploram a essência da cultura brasileira para adicionar à minha coleção de lançamento. Alguma sugestão?
+                </p>
+
+                <div class="discussion-card__footer">
+                  <div class="discussion-card__stats">
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M3 3h12v9H9l-3 3V12H3V3z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M9 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                  </div>
+                  <button class="button button--secondary discussion-card__cta">Ver discussão</button>
+                </div>
+              </article>
+
+              <!-- Discussion 3 -->
+              <article class="discussion-card" data-category="historias">
+                <div class="discussion-card__header">
+                  <img src="https://www.figma.com/api/mcp/asset/a50945c2-d5e2-4ba6-be18-9b0155cfad4f" alt="Claudio Augusto" class="discussion-card__avatar">
+                  <div class="discussion-card__header-content">
+                    <div class="discussion-card__title-row">
+                      <h2 class="discussion-card__title">Meu livro viajou de Niterói para o Rio em apenas 2 dias!</h2>
+                      <span class="discussion-card__badge discussion-card__badge--historias">Histórias</span>
+                    </div>
+                    <p class="discussion-card__meta">
+                      por <span class="discussion-card__author">Claudio Augusto</span> • 2 dias atrás
+                    </p>
+                  </div>
+                </div>
+
+                <p class="discussion-card__excerpt">
+                  Eu liberei "O Alquimista" no Café Sensibilidade na semana passada e ele já foi registrado na Livraria da Travessa no Rio! Muito empolgado para ver sua jornada.
+                </p>
+
+                <div class="discussion-card__footer">
+                  <div class="discussion-card__stats">
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M3 3h12v9H9l-3 3V12H3V3z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M9 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                  </div>
+                  <button class="button button--secondary discussion-card__cta">Ver discussão</button>
+                </div>
+              </article>
+
+              <!-- Discussion 4 -->
+              <article class="discussion-card" data-category="eventos">
+                <div class="discussion-card__header">
+                  <img src="https://www.figma.com/api/mcp/asset/a50945c2-d5e2-4ba6-be18-9b0155cfad4f" alt="Julia Krall" class="discussion-card__avatar">
+                  <div class="discussion-card__header-content">
+                    <div class="discussion-card__title-row">
+                      <h2 class="discussion-card__title">Vamos organizar um encontro de troca de livros em Icaraí</h2>
+                      <span class="discussion-card__badge discussion-card__badge--eventos">Eventos</span>
+                    </div>
+                    <p class="discussion-card__meta">
+                      por <span class="discussion-card__author">Julia Krall</span> • 2 dias atrás
+                    </p>
+                  </div>
+                </div>
+
+                <p class="discussion-card__excerpt">
+                  Pensei que seria divertido organizar um encontro onde todos possamos trazer livros para trocar e liberar na natureza. Pensando em fazer na Praia de Icaraí no próximo mês.
+                </p>
+
+                <div class="discussion-card__footer">
+                  <div class="discussion-card__stats">
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M3 3h12v9H9l-3 3V12H3V3z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                    <div class="discussion-card__stat">
+                      <svg class="discussion-card__stat-icon" viewBox="0 0 18 18" fill="currentColor">
+                        <path d="M9 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+                      </svg>
+                      <span>35</span>
+                    </div>
+                  </div>
+                  <button class="button button--secondary discussion-card__cta">Ver discussão</button>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://www.figma.com/api/mcp/asset/c995811e-8679-46dd-9398-366301023c1c" alt="Encontrei Logo">
+          </div>
+          <p class="footer__description">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo. Deixe um livro, encontre um livro, junte-se à jornada.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Navegue</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html" class="footer__nav-link">Início</a></li>
+              <li><a href="#" class="footer__nav-link">Descubra</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Sobre</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html#" class="footer__nav-link">Como funciona</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Comunidade</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Encontrar um livro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Conecte-se</h3>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+              <a href="#" class="footer__social-link" aria-label="Reddit">Reddit</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Todos os direitos reservados - Encontrei por Aí | 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/forum.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

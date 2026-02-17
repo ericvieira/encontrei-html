@@ -1,0 +1,24 @@
+{
+  "name": "encontrei-html",
+  "version": "1.0.0",
+  "description": "Plataforma de book crossing para Niterói - Comunidade Literária",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server --port=8000"
+  },
+  "keywords": [
+    "book-crossing",
+    "books",
+    "community",
+    "niteroi",
+    "reading"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Faça o check-in de um livro encontrado e continue sua jornada literária">
+  <title>Check-in | Encontrei</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="https://www.figma.com/api/mcp/asset/56f0eee5-78a7-46d5-9bce-003e99702929" alt="Encontrei Logo">
+        </a>
+      </div>
+
+      <nav class="header__nav" role="navigation">
+        <a href="index.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/f8cff7d9-fe21-48ef-827a-775b98bd738c" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Início</span>
+        </a>
+
+        <a href="#descubra" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Descubra</span>
+        </a>
+
+        <a href="parceiros.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/cc190de8-e229-45d0-8ec3-0a3df0e6cde1" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Parceiros</span>
+        </a>
+
+        <a href="forum.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/c804fac2-a0b4-45eb-8f98-f46a68bbd819" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Fórum</span>
+        </a>
+
+        <a href="checkin.html" class="header__menu-item header__menu-item--active">
+          <img src="https://www.figma.com/api/mcp/asset/149bbb91-5b3a-456f-b174-cb8390eca2f5" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Check-in</span>
+        </a>
+
+        <a href="perfil.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/0de5e35b-bafe-405d-a8f4-7fc75c0ff5f2" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="checkin-page">
+    <div class="checkin-page__hero">
+      <div class="container">
+        <!-- Page Title -->
+        <div class="section-header section-header--center">
+          <h1 class="section-header__title">Check-in de um livro encontrado</h1>
+          <p class="section-header__subtitle">Encontrou um livro? Faça o check-in para continuar sua jornada!</p>
+        </div>
+
+        <!-- Check-in Form -->
+        <div class="checkin-form-wrapper">
+          <div class="checkin-form">
+            <div class="checkin-form__header">
+              <h2 class="checkin-form__title">Check-in de livro</h2>
+              <p class="checkin-form__description">
+                Lorem ipsum dolor sit amet consectetur. Sollicitudin diam semper tempus maecenas pellentesque laoreet.
+              </p>
+            </div>
+
+            <form id="checkinForm" class="checkin-form__fields">
+              <!-- Book ID / QR Code -->
+              <div class="form__group">
+                <label for="bookId" class="form__label">ID do Livro ou Código QR</label>
+                <div class="form__input-with-button">
+                  <input
+                    type="text"
+                    id="bookId"
+                    name="bookId"
+                    class="form__input"
+                    placeholder="ID do livro (ex.: WBS-1234)"
+                    required
+                  >
+                  <button type="button" class="form__icon-button" id="scanQrBtn" title="Escanear código QR">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                      <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="form__group">
+                <label for="location" class="form__label">Localização atual</label>
+                <div class="form__input-with-button">
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    class="form__input"
+                    placeholder="Onde você encontrou o livro?"
+                    required
+                  >
+                  <button type="button" class="form__icon-button" id="getLocationBtn" title="Usar localização atual">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="3"/>
+                      <line x1="12" y1="1" x2="12" y2="3"/>
+                      <line x1="12" y1="21" x2="12" y2="23"/>
+                      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                      <line x1="1" y1="12" x2="3" y2="12"/>
+                      <line x1="21" y1="12" x2="23" y2="12"/>
+                      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Observations -->
+              <div class="form__group">
+                <label for="observations" class="form__label">Observações</label>
+                <textarea
+                  id="observations"
+                  name="observations"
+                  class="form__textarea"
+                  rows="5"
+                  placeholder="Compartilhe seus pensamentos sobre esse livro ou sobre onde você o encontrou"
+                ></textarea>
+              </div>
+
+              <!-- Rating -->
+              <div class="form__group">
+                <div class="star-rating">
+                  <label class="star-rating__label">Toque para avaliar</label>
+                  <div class="star-rating__stars" id="starRating">
+                    <button type="button" class="star-rating__star" data-rating="1" aria-label="1 estrela">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="star-rating__star" data-rating="2" aria-label="2 estrelas">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="star-rating__star" data-rating="3" aria-label="3 estrelas">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="star-rating__star" data-rating="4" aria-label="4 estrelas">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="star-rating__star" data-rating="5" aria-label="5 estrelas">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+              </div>
+
+              <!-- Photo Upload -->
+              <div class="form__group">
+                <label class="form__label">Enviar uma foto (Opcional)</label>
+                <div class="file-upload" id="fileUpload">
+                  <input type="file" id="photoUpload" name="photo" accept="image/*" class="file-upload__input">
+                  <div class="file-upload__content" id="uploadContent">
+                    <svg class="file-upload__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                      <polyline points="17 8 12 3 7 8"/>
+                      <line x1="12" y1="3" x2="12" y2="15"/>
+                    </svg>
+                    <p class="file-upload__text">Arraste e solte uma imagem, ou clique para navegar</p>
+                    <button type="button" class="button button--secondary button--sm" id="browseFilesBtn">
+                      Procurar arquivos
+                    </button>
+                  </div>
+                  <div class="file-upload__preview" id="uploadPreview" style="display: none;">
+                    <img id="previewImage" src="" alt="Preview">
+                    <button type="button" class="file-upload__remove" id="removePhotoBtn" aria-label="Remover foto">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="checkin-form__actions">
+                <button type="submit" class="button button--primary">Fazer Check-in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://www.figma.com/api/mcp/asset/421887a0-780f-4b70-9148-f171e5af862c" alt="Encontrei Logo">
+          </div>
+          <p class="footer__tagline">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo.
+            Deixe um livro, encontre um livro, junte-se à jornada.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Navegue</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html">Descubra</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Sobre</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#como-funciona">Como funciona</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Comunidade</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#encontrar">Encontrar um livro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h3 class="footer__nav-title">Conecte-se</h3>
+            <div class="footer__social">
+              <a href="#" aria-label="Instagram">instagram</a>
+              <a href="#" aria-label="Facebook">facebook</a>
+              <a href="#" aria-label="Twitter">twitter</a>
+              <a href="#" aria-label="Reddit">reddit</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Todos os direitos reservados - Encontrei por Aí | 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/checkin.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

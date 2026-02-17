@@ -1,0 +1,60 @@
+/**
+ * Check-in Widget Component
+ * Check-in call-to-action card
+ */
+
+.checkin-widget {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkin-widget::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.checkin-widget__badge {
+  background-color: var(--color-accent);
+  color: white;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  display: inline-block;
+  margin-bottom: var(--space-3);
+}
+
+.checkin-widget__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.checkin-widget__text {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+  line-height: var(--line-height-normal);
+}
+
+.checkin-widget__cta {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.checkin-widget__cta:hover {
+  background-color: #1e4976;
+}

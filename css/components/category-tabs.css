@@ -1,0 +1,56 @@
+/**
+ * Category Tabs Component
+ * Category filter buttons
+ */
+
+.category-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: var(--space-2);
+}
+
+.category-tabs__tab {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid #d9d9d9;
+  border-radius: var(--radius-sm);
+  background-color: white;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.category-tabs__tab:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text-primary);
+}
+
+.category-tabs__tab--active {
+  background-color: var(--color-porsche-200);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Hide scrollbar but keep functionality */
+.category-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.category-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.category-tabs::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+.category-tabs::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0;
+}

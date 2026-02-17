@@ -1,0 +1,138 @@
+/**
+ * Check-in Page Component
+ * Page-specific styles for the check-in form
+ */
+
+.checkin-page {
+  background-color: var(--color-porsche-50);
+  min-height: calc(100vh - 94px);
+}
+
+.checkin-page__hero {
+  padding: var(--space-20) 0;
+}
+
+.checkin-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.checkin-form {
+  background-color: var(--color-porsche-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.checkin-form__header {
+  margin-bottom: var(--space-10);
+}
+
+.checkin-form__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-porsche-950);
+  letter-spacing: var(--letter-spacing-tighter);
+  margin-bottom: var(--space-1);
+}
+
+.checkin-form__description {
+  font-size: var(--font-size-base);
+  color: var(--color-woodsmoke-500);
+  line-height: var(--line-height-normal);
+}
+
+.checkin-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.checkin-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+
+/* Form input with icon button */
+.form__input-with-button {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.form__input-with-button .form__input {
+  flex: 1;
+}
+
+.form__icon-button {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: var(--color-porsche-50);
+  border: 1px solid var(--color-porsche-200);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.form__icon-button:hover {
+  background-color: white;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.form__icon-button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.form__icon-button:active {
+  transform: scale(0.95);
+}
+
+/* Override form styles for checkin page */
+.checkin-form .form__input,
+.checkin-form .form__textarea {
+  background-color: var(--color-porsche-50);
+  border-color: var(--color-porsche-200);
+}
+
+.checkin-form .form__input:focus,
+.checkin-form .form__textarea:focus {
+  border-color: var(--color-primary);
+  background-color: white;
+}
+
+.checkin-form .form__label {
+  color: var(--color-porsche-950);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkin-page__hero {
+    padding: var(--space-10) 0;
+  }
+
+  .checkin-form {
+    padding: var(--space-5);
+  }
+
+  .checkin-form__header {
+    margin-bottom: var(--space-6);
+  }
+
+  .checkin-form__title {
+    font-size: var(--font-size-lg);
+  }
+
+  .checkin-form__actions {
+    justify-content: stretch;
+  }
+
+  .checkin-form__actions .button {
+    width: 100%;
+  }
+}

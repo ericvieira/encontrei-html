@@ -1,0 +1,87 @@
+/**
+ * Button Component
+ * Primary, secondary, and utility buttons
+ */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.43;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: none;
+  text-decoration: none;
+}
+
+/* Primary Button */
+.button--primary {
+  background-color: white;
+  color: black;
+  box-shadow: var(--shadow-sm);
+}
+
+.button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.button--primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button (Outline) */
+.button--secondary {
+  background-color: transparent;
+  color: #837662;
+  border: 1px solid #837662;
+}
+
+.button--secondary:hover {
+  background-color: rgba(131, 118, 98, 0.05);
+}
+
+/* Tertiary Button (Link style) */
+.button--tertiary {
+  background-color: var(--color-porsche-100);
+  color: var(--color-accent);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  font-weight: var(--font-weight-medium);
+}
+
+.button--tertiary:hover {
+  background-color: var(--color-porsche-600);
+  color: var(--color-porsche-100);
+}
+
+/* Button Sizes */
+.button--sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+}
+
+.button--lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--font-size-md);
+}
+
+/* Button Icon */
+.button__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Disabled State */
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

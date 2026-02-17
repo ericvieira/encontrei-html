@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros">
+  <title>Espaços Parceiros | Encontrei</title>
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="https://www.figma.com/api/mcp/asset/56f0eee5-78a7-46d5-9bce-003e99702929" alt="Encontrei Logo">
+        </a>
+      </div>
+
+      <nav class="header__nav" role="navigation">
+        <a href="index.html#inicio" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/f8cff7d9-fe21-48ef-827a-775b98bd738c" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Início</span>
+        </a>
+
+        <a href="#descubra" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Descubra</span>
+        </a>
+
+        <a href="parceiros.html" class="header__menu-item header__menu-item--active">
+          <img src="https://www.figma.com/api/mcp/asset/cc190de8-e229-45d0-8ec3-0a3df0e6cde1" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Parceiros</span>
+        </a>
+
+        <a href="forum.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/c804fac2-a0b4-45eb-8f98-f46a68bbd819" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Fórum</span>
+        </a>
+
+        <a href="checkin.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/149bbb91-5b3a-456f-b174-cb8390eca2f5" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Check-in</span>
+        </a>
+
+        <a href="perfil.html" class="header__menu-item">
+          <img src="https://www.figma.com/api/mcp/asset/31e098c1-7254-4904-81de-c20c45509982" alt="" class="header__menu-icon">
+          <span class="header__menu-text">Perfil</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="background-color: var(--color-background-secondary); min-height: calc(100vh - 94px);">
+    <section class="section">
+      <div class="container">
+
+        <!-- Page Header -->
+        <div style="margin-bottom: var(--space-10);">
+          <h1 class="heading-1" style="color: var(--color-primary); margin-bottom: var(--space-2);">Espaços parceiros</h1>
+          <p class="text-lg" style="color: var(--color-text-secondary);">Descubra cafés, livrarias e bibliotecas participantes da nossa rede de compartilhamento de livros</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <svg class="search-bar__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="8" cy="8" r="6"/>
+            <path d="M14 14l4 4"/>
+          </svg>
+          <input type="text" class="search-bar__input" placeholder="Buscar por nome ou localização...">
+          <div class="search-bar__filters">
+            <button class="search-bar__filter">
+              <svg class="search-bar__filter-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 2a6 6 0 100 12A6 6 0 008 2zM3 8a5 5 0 1110 0A5 5 0 013 8z"/>
+                <path d="M8 4a4 4 0 00-4 4h1a3 3 0 016 0h1a4 4 0 00-4-4z"/>
+              </svg>
+              <span>Niterói</span>
+            </button>
+            <button class="search-bar__filter">
+              <svg class="search-bar__filter-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M2 4a1 1 0 011-1h10a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4z"/>
+              </svg>
+              <span>Gênero</span>
+            </button>
+            <button class="search-bar__filter">
+              <svg class="search-bar__filter-icon" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M2 4a1 1 0 011-1h10a1 1 0 011 1v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4z"/>
+              </svg>
+              <span>Perfil</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs" role="tablist" style="margin-bottom: var(--space-6);">
+          <button class="tabs__tab tabs__tab--active" role="tab" data-filter="todos">Todos</button>
+          <button class="tabs__tab" role="tab" data-filter="cafes">Cafés</button>
+          <button class="tabs__tab" role="tab" data-filter="livraria">Livraria</button>
+          <button class="tabs__tab" role="tab" data-filter="bibliotecas">Bibliotecas</button>
+        </div>
+
+        <!-- Partner Cards Grid -->
+        <div class="grid grid-cols-3 gap-6" id="partners-grid">
+
+          <!-- Café Cultura -->
+          <article class="partner-card-detailed" data-type="cafes">
+            <div class="partner-card-detailed__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/9cdc9047-1695-4a0a-bd53-8fbaba77abc4" alt="Café Cultura" class="partner-card-detailed__image">
+              <span class="partner-card-detailed__badge">Cafeteria</span>
+            </div>
+            <div class="partner-card-detailed__content">
+              <div class="partner-card-detailed__header">
+                <h2 class="partner-card-detailed__name">Café Cultura</h2>
+                <p class="partner-card-detailed__location">
+                  <svg class="partner-card-detailed__location-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a4 4 0 00-4 4c0 2.5 4 8 4 8s4-5.5 4-8a4 4 0 00-4-4zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                  </svg>
+                  R. Mariz e Barros - Icaraí
+                </p>
+              </div>
+
+              <p class="partner-card-detailed__description">
+                Um café acolhedor com uma extensa biblioteca dedicada à troca de livros onde os visitantes podem desfrutar de uma excelente bebida. Ambiente perfeito para leitura e trabalho.
+              </p>
+
+              <div class="partner-card-detailed__meta">
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1a7 7 0 100 14A7 7 0 008 1zM8 11V8h3V6H8V4H6v2H3v2h3v3h2z"/>
+                  </svg>
+                  <span>08:00 - 20:00</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2 3h12v10H2V3zm1 1v8h10V4H3z"/>
+                  </svg>
+                  <span>Área Externa</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>Troca de livros</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__contact">
+                <svg class="partner-card-detailed__contact-icon" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3z"/>
+                </svg>
+                <span>(21) 9837-3687</span>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>5 livros disponíveis</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a6 6 0 100 12A6 6 0 008 2z"/>
+                  </svg>
+                  <span>Encontros de Quadrinhos de Machado</span>
+                </div>
+              </div>
+
+              <a href="parceiro-detalhe.html" class="button button--primary partner-card-detailed__cta" style="text-decoration: none; text-align: center;">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Livraria Itinerante -->
+          <article class="partner-card-detailed" data-type="livraria">
+            <div class="partner-card-detailed__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/25226db2-f45a-4279-a1f5-f9c90259cdf5" alt="Livraria Itinerante" class="partner-card-detailed__image">
+              <span class="partner-card-detailed__badge">Livraria</span>
+            </div>
+            <div class="partner-card-detailed__content">
+              <div class="partner-card-detailed__header">
+                <h2 class="partner-card-detailed__name">Livraria Itinerante</h2>
+                <p class="partner-card-detailed__location">
+                  <svg class="partner-card-detailed__location-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a4 4 0 00-4 4c0 2.5 4 8 4 8s4-5.5 4-8a4 4 0 00-4-4zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                  </svg>
+                  R. Mariz e Barros - Icaraí
+                </p>
+              </div>
+
+              <p class="partner-card-detailed__description">
+                Uma livraria acolhedora com uma extensa biblioteca dedicada à troca de livros onde os visitantes podem desfrutar de uma excelente bebida. Ambiente perfeito para leitura e trabalho.
+              </p>
+
+              <div class="partner-card-detailed__meta">
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1a7 7 0 100 14A7 7 0 008 1zM8 11V8h3V6H8V4H6v2H3v2h3v3h2z"/>
+                  </svg>
+                  <span>10:00 - 20:00</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2 3h12v10H2V3zm1 1v8h10V4H3z"/>
+                  </svg>
+                  <span>Área Externa</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>Troca de livros</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__contact">
+                <svg class="partner-card-detailed__contact-icon" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3z"/>
+                </svg>
+                <span>(21) 9837-3687</span>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>12 livros disponíveis</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a6 6 0 100 12A6 6 0 008 2z"/>
+                  </svg>
+                  <span>Encontros de Quadrinhos de Machado</span>
+                </div>
+              </div>
+
+              <a href="parceiro-detalhe.html" class="button button--primary partner-card-detailed__cta" style="text-decoration: none; text-align: center;">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Confeitaria Guanabara -->
+          <article class="partner-card-detailed" data-type="cafes">
+            <div class="partner-card-detailed__image-wrapper">
+              <img src="https://www.figma.com/api/mcp/asset/1ad80175-edde-4880-8caa-a4404e63a568" alt="Confeitaria Guanabara" class="partner-card-detailed__image">
+              <span class="partner-card-detailed__badge">Confeitaria</span>
+            </div>
+            <div class="partner-card-detailed__content">
+              <div class="partner-card-detailed__header">
+                <h2 class="partner-card-detailed__name">Confeitaria Guanabara</h2>
+                <p class="partner-card-detailed__location">
+                  <svg class="partner-card-detailed__location-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a4 4 0 00-4 4c0 2.5 4 8 4 8s4-5.5 4-8a4 4 0 00-4-4zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+                  </svg>
+                  R. Mariz e Barros - Icaraí
+                </p>
+              </div>
+
+              <p class="partner-card-detailed__description">
+                Uma confeitaria acolhedora com uma extensa biblioteca dedicada à troca de livros onde os visitantes podem desfrutar de uma excelente bebida. Ambiente perfeito para leitura e trabalho.
+              </p>
+
+              <div class="partner-card-detailed__meta">
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1a7 7 0 100 14A7 7 0 008 1zM8 11V8h3V6H8V4H6v2H3v2h3v3h2z"/>
+                  </svg>
+                  <span>07:00 - 19:00</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M2 3h12v10H2V3zm1 1v8h10V4H3z"/>
+                  </svg>
+                  <span>Área Externa</span>
+                </div>
+                <div class="partner-card-detailed__meta-item">
+                  <svg class="partner-card-detailed__meta-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>Troca de livros</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__contact">
+                <svg class="partner-card-detailed__contact-icon" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M2 3a1 1 0 011-1h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3z"/>
+                </svg>
+                <span>(21) 9837-3687</span>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M3 2h10a1 1 0 011 1v10a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1z"/>
+                  </svg>
+                  <span>8 livros disponíveis</span>
+                </div>
+              </div>
+
+              <div class="partner-card-detailed__stats">
+                <div class="partner-card-detailed__stat">
+                  <svg class="partner-card-detailed__stat-icon" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 2a6 6 0 100 12A6 6 0 008 2z"/>
+                  </svg>
+                  <span>Encontros de Quadrinhos de Machado</span>
+                </div>
+              </div>
+
+              <a href="parceiro-detalhe.html" class="button button--primary partner-card-detailed__cta" style="text-decoration: none; text-align: center;">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Repeat cards for a full grid (you can duplicate the above for more entries) -->
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="https://www.figma.com/api/mcp/asset/c995811e-8679-46dd-9398-366301023c1c" alt="Encontrei Logo">
+          </div>
+          <p class="footer__description">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo. Deixe um livro, encontre um livro, junte-se à jornada.
+          </p>
+        </div>
+
+        <nav class="footer__nav">
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Navegue</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html" class="footer__nav-link">Início</a></li>
+              <li><a href="#" class="footer__nav-link">Descubra</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Sobre</h3>
+            <ul class="footer__nav-list">
+              <li><a href="index.html#" class="footer__nav-link">Como funciona</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Comunidade</h3>
+            <ul class="footer__nav-list">
+              <li><a href="#" class="footer__nav-link">Encontrar um livro</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h3 class="footer__nav-title">Conecte-se</h3>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">Facebook</a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">Twitter</a>
+              <a href="#" class="footer__social-link" aria-label="Reddit">Reddit</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">Todos os direitos reservados - Encontrei por Aí | 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/parceiros.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

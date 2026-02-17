@@ -1,0 +1,140 @@
+/**
+ * Hero Component
+ * Main landing hero section with book showcase
+ */
+
+.hero {
+  background-color: var(--color-background-secondary);
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-20) var(--space-4);
+}
+
+.hero__content-wrapper {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-15);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+/* Decorative background element */
+.hero__decoration {
+  position: absolute;
+  right: -100px;
+  top: -159px;
+  width: 830px;
+  height: 831px;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.hero__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  z-index: 1;
+}
+
+.hero__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tighter);
+  line-height: var(--line-height-tight);
+}
+
+.hero__description {
+  font-size: var(--font-size-lg);
+  color: var(--color-st-tropaz-950);
+  line-height: var(--line-height-normal);
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+/* Book showcase */
+.hero__books {
+  position: relative;
+  width: 507px;
+  height: 468px;
+  flex-shrink: 0;
+}
+
+.hero__book {
+  position: absolute;
+  width: 219.333px;
+  height: 372.402px;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  box-shadow: var(--shadow-lg);
+  transform-style: preserve-3d;
+  transform: rotateZ(30deg) skewX(30deg) scaleY(0.87);
+}
+
+.hero__book img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+/* Book positions - staggered 3D effect */
+.hero__book:nth-child(1) {
+  left: 317px;
+  top: 0;
+  z-index: 5;
+}
+
+.hero__book:nth-child(2) {
+  left: 255px;
+  top: 9px;
+  z-index: 4;
+}
+
+.hero__book:nth-child(3) {
+  left: 176px;
+  top: 20px;
+  z-index: 3;
+}
+
+.hero__book:nth-child(4) {
+  left: 80px;
+  top: 20px;
+  z-index: 2;
+}
+
+.hero__book:nth-child(5) {
+  left: 0;
+  top: 35px;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 64em) {
+  .hero__content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__books {
+    width: 100%;
+    height: 300px;
+    transform: scale(0.7);
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+}

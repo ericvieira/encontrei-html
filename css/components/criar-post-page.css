@@ -1,0 +1,139 @@
+/**
+ * Criar Post Page Component
+ * Standalone create discussion page styling
+ */
+
+.criar-post-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.criar-post-card {
+  background-color: var(--color-porsche-100);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.criar-post-card__header {
+  margin-bottom: var(--space-10);
+}
+
+.criar-post-card__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-porsche-950);
+  letter-spacing: var(--letter-spacing-tighter);
+  margin-bottom: var(--space-1);
+}
+
+.criar-post-card__description {
+  font-size: var(--font-size-base);
+  color: var(--color-woodsmoke-500);
+  line-height: var(--line-height-normal);
+}
+
+.criar-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.criar-post-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+
+/* Forum Tabs (shared between forum.html and criar-post.html) */
+.forum-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.forum-tabs__tab {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition-fast);
+  position: relative;
+  bottom: -1px;
+}
+
+.forum-tabs__tab:hover {
+  color: var(--color-text-primary);
+}
+
+.forum-tabs__tab--active {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  border-bottom-color: var(--color-text-primary);
+}
+
+/* Override form styles for criar-post page */
+.criar-post-card .form__input,
+.criar-post-card .form__select,
+.criar-post-card .form__textarea {
+  background-color: var(--color-porsche-50);
+  border-color: var(--color-porsche-200);
+}
+
+.criar-post-card .form__input:focus,
+.criar-post-card .form__select:focus,
+.criar-post-card .form__textarea:focus {
+  border-color: var(--color-primary);
+  background-color: white;
+}
+
+.criar-post-card .form__label {
+  color: var(--color-porsche-950);
+}
+
+/* Select dropdown styling */
+.form__select-wrapper {
+  position: relative;
+}
+
+.form__select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: var(--space-10);
+  cursor: pointer;
+}
+
+.form__select-icon {
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .criar-post-card {
+    padding: var(--space-5);
+  }
+
+  .criar-post-card__header {
+    margin-bottom: var(--space-6);
+  }
+
+  .criar-post-card__title {
+    font-size: var(--font-size-lg);
+  }
+
+  .criar-post-form__actions {
+    justify-content: stretch;
+  }
+
+  .criar-post-form__actions .button {
+    width: 100%;
+  }
+}
