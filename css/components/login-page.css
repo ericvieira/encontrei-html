@@ -1,0 +1,186 @@
+/**
+ * Login Page Component
+ * Standalone centered authentication layout
+ */
+
+.login-page {
+  min-height: 100vh;
+  background-color: var(--color-porsche-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.login-page__container {
+  width: 100%;
+  max-width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.login-page__logo {
+  width: 135px;
+  height: 41.672px;
+}
+
+.login-page__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.login-page__title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-porsche-950);
+  text-align: center;
+}
+
+.login-page__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.login-page__google-btn {
+  border: 1px solid var(--color-porsche-950);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-porsche-950);
+  width: 100%;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-md);
+}
+
+.login-page__google-icon {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.login-page__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-woodsmoke-300);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.login-page__divider::before,
+.login-page__divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--color-porsche-200);
+}
+
+.login-page__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.login-page__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.login-page__label {
+  color: var(--color-porsche-950);
+  font-size: var(--font-size-md);
+  line-height: 1.4;
+}
+
+.login-page__input {
+  width: 100%;
+  min-height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-porsche-200);
+  background: var(--color-porsche-50);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-950);
+}
+
+.login-page__input::placeholder {
+  color: var(--color-woodsmoke-300);
+}
+
+.login-page__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: var(--color-background);
+}
+
+.login-page__meta-links {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+}
+
+.login-page__meta-links a {
+  text-decoration: underline;
+}
+
+.login-page__meta-links a:first-child {
+  color: var(--color-primary);
+}
+
+.login-page__meta-links a:last-child {
+  color: var(--color-porsche-950);
+}
+
+.login-page__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.login-page__actions .button {
+  width: 100%;
+}
+
+.login-page__signup-btn {
+  background: transparent;
+  border: 1px solid var(--color-legacy-border);
+  color: var(--color-legacy-border);
+  min-height: 56px;
+  padding: var(--space-3) var(--space-2);
+}
+
+.login-page__help {
+  color: var(--color-porsche-950);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.login-page__help a {
+  color: var(--color-primary);
+}
+
+@media (max-width: 48em) {
+  .login-page {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .login-page__container {
+    gap: var(--space-6);
+  }
+
+  .login-page__title {
+    font-size: 1.75rem;
+  }
+}

@@ -27,6 +27,7 @@
 @import url('./components/form.css');
 @import url('./components/search-bar.css');
 @import url('./components/partner-card-detailed.css');
+@import url('./components/parceiro-detalhe-page.css');
 @import url('./components/photo-gallery.css');
 @import url('./components/review-card.css');
 @import url('./components/event-card.css');
@@ -37,6 +38,8 @@
 @import url('./components/file-upload.css');
 @import url('./components/checkin-page.css');
 @import url('./components/criar-post-page.css');
+@import url('./components/login-page.css');
+@import url('./components/cadastro-page.css');
 
 /* 4. Custom Sections */
 .cta-section {

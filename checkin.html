@@ -24,38 +24,38 @@
     <div class="header__container">
       <div class="header__logo">
         <a href="index.html">
-          <img src="https://www.figma.com/api/mcp/asset/56f0eee5-78a7-46d5-9bce-003e99702929" alt="Encontrei Logo">
+          <img src="assets/icons/logo/header-default.svg" alt="Encontrei Logo">
         </a>
       </div>
 
       <nav class="header__nav" role="navigation">
         <a href="index.html" class="header__menu-item">
-          <img src="https://www.figma.com/api/mcp/asset/f8cff7d9-fe21-48ef-827a-775b98bd738c" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/inicio-inactive.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Início</span>
         </a>
 
         <a href="#descubra" class="header__menu-item">
-          <img src="https://www.figma.com/api/mcp/asset/020400cd-c001-4fbc-9820-ecaace643982" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/descubra.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Descubra</span>
         </a>
 
         <a href="parceiros.html" class="header__menu-item">
-          <img src="https://www.figma.com/api/mcp/asset/cc190de8-e229-45d0-8ec3-0a3df0e6cde1" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/parceiros-inactive.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Parceiros</span>
         </a>
 
         <a href="forum.html" class="header__menu-item">
-          <img src="https://www.figma.com/api/mcp/asset/c804fac2-a0b4-45eb-8f98-f46a68bbd819" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/forum-inactive.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Fórum</span>
         </a>
 
         <a href="checkin.html" class="header__menu-item header__menu-item--active">
-          <img src="https://www.figma.com/api/mcp/asset/149bbb91-5b3a-456f-b174-cb8390eca2f5" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/checkin-active.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Check-in</span>
         </a>
 
         <a href="perfil.html" class="header__menu-item">
-          <img src="https://www.figma.com/api/mcp/asset/0de5e35b-bafe-405d-a8f4-7fc75c0ff5f2" alt="" class="header__menu-icon">
+          <img src="assets/icons/header/perfil-inactive.svg" alt="" class="header__menu-icon">
           <span class="header__menu-text">Perfil</span>
         </a>
       </nav>
@@ -67,9 +67,9 @@
     <div class="checkin-page__hero">
       <div class="container">
         <!-- Page Title -->
-        <div class="section-header section-header--center">
-          <h1 class="section-header__title">Check-in de um livro encontrado</h1>
-          <p class="section-header__subtitle">Encontrou um livro? Faça o check-in para continuar sua jornada!</p>
+        <div class="checkin-page__header">
+          <h1 class="checkin-page__title">Check-in de um livro encontrado</h1>
+          <p class="checkin-page__subtitle">Encontrou um livro? Faça o check-in para continuar sua jornada!</p>
         </div>
 
         <!-- Check-in Form -->
@@ -222,46 +222,63 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__top">
+      <div class="footer__main">
         <div class="footer__brand">
           <div class="footer__logo">
-            <img src="https://www.figma.com/api/mcp/asset/421887a0-780f-4b70-9148-f171e5af862c" alt="Encontrei Logo">
+            <img src="assets/icons/logo/footer-checkin.svg" alt="Encontrei Logo">
           </div>
-          <p class="footer__tagline">
-            Criando uma comunidade de leitores através de livros que viajam pelo mundo.
-            Deixe um livro, encontre um livro, junte-se à jornada.
+          <p class="footer__description">
+            Criando uma comunidade de leitores através de livros que viajam pelo mundo. Deixe um livro, encontre um livro, junte-se à jornada.
           </p>
         </div>
 
         <nav class="footer__nav">
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Navegue</h3>
             <ul class="footer__nav-list">
-              <li><a href="index.html">Descubra</a></li>
+              <li><a href="index.html" class="footer__nav-link">Início</a></li>
+              <li><a href="#" class="footer__nav-link">Descubra</a></li>
+              <li><a href="parceiros.html" class="footer__nav-link">Parceiros</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Sobre</h3>
             <ul class="footer__nav-list">
-              <li><a href="#como-funciona">Como funciona</a></li>
+              <li><a href="#" class="footer__nav-link">Nossa história</a></li>
+              <li><a href="#como-funciona" class="footer__nav-link">Como funciona</a></li>
+              <li><a href="parceiros.html" class="footer__nav-link">Cafés parceiros</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Comunidade</h3>
             <ul class="footer__nav-list">
-              <li><a href="#encontrar">Encontrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Registrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Encontrar um livro</a></li>
+              <li><a href="#" class="footer__nav-link">Classificação</a></li>
             </ul>
           </div>
 
-          <div class="footer__nav-section">
+          <div class="footer__nav-column">
             <h3 class="footer__nav-title">Conecte-se</h3>
             <div class="footer__social">
-              <a href="#" aria-label="Instagram">instagram</a>
-              <a href="#" aria-label="Facebook">facebook</a>
-              <a href="#" aria-label="Twitter">twitter</a>
-              <a href="#" aria-label="Reddit">reddit</a>
+              <a href="#" class="footer__social-link" aria-label="Siga-nos no Instagram">
+                <img src="assets/icons/social/instagram.svg" alt="" aria-hidden="true" width="12" height="12">
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Siga-nos no Facebook">
+                <img src="assets/icons/social/facebook-f.svg" alt="" aria-hidden="true" width="12" height="12">
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Siga-nos no X">
+                <img src="assets/icons/social/x-twitter.svg" alt="" aria-hidden="true" width="12" height="12">
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Siga-nos no Reddit">
+                <img src="assets/icons/social/reddit-alien.svg" alt="" aria-hidden="true" width="12" height="12">
+              </a>
+              <a href="mailto:ola@acheipor.ai" class="footer__social-link footer__social-link--email" aria-label="Envie um e-mail para ola@acheipor.ai">
+                <img src="assets/icons/social/at.svg" alt="" aria-hidden="true" width="12" height="12">
+                <span>ola@acheipor.ai</span>
+              </a>
             </div>
           </div>
         </nav>

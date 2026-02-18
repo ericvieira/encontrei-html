@@ -33,7 +33,7 @@
 }
 
 .activity-feed__icon-wrapper {
-  background-color: #f1e0b7; /* porsche-200 */
+  background-color: var(--color-porsche-200); /* porsche-200 */
   padding: var(--space-2);
   border-radius: var(--radius-sm);
   flex-shrink: 0;

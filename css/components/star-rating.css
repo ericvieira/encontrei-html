@@ -29,7 +29,7 @@
   cursor: pointer;
   width: 28px;
   height: 28px;
-  color: #d9d9d9;
+  color: var(--color-woodsmoke-100);
   transition: color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -51,11 +51,11 @@
 
 /* States */
 .star-rating__star--filled {
-  color: #fbbf24;
+  color: var(--color-warning-500);
 }
 
 .star-rating__star--hover {
-  color: #fcd34d;
+  color: var(--color-warning-400);
 }
 
 /* Animation */

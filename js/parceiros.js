@@ -115,17 +115,7 @@
 
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        // Toggle active state
-        button.classList.toggle('active');
-
-        // Add visual feedback
-        if (button.classList.contains('active')) {
-          button.style.borderColor = 'var(--color-primary)';
-          button.style.backgroundColor = 'var(--color-background-secondary)';
-        } else {
-          button.style.borderColor = '#d9d9d9';
-          button.style.backgroundColor = 'white';
-        }
+        button.classList.toggle('search-bar__filter--active');
       });
     });
   }

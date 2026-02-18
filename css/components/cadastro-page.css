@@ -1,0 +1,178 @@
+/**
+ * Cadastro Page Component
+ * Standalone centered signup layout
+ */
+
+.cadastro-page {
+  min-height: 100vh;
+  background-color: var(--color-porsche-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.cadastro-page__container {
+  width: 100%;
+  max-width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.cadastro-page__logo {
+  width: 135px;
+  height: 41.672px;
+}
+
+.cadastro-page__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cadastro-page__heading {
+  width: 100%;
+  text-align: center;
+}
+
+.cadastro-page__title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-porsche-950);
+}
+
+.cadastro-page__subtitle {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-950);
+  line-height: var(--line-height-tight);
+}
+
+.cadastro-page__subtitle a {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cadastro-page__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.cadastro-page__google-btn {
+  border: 1px solid var(--color-porsche-950);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-porsche-950);
+  width: 100%;
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-md);
+}
+
+.cadastro-page__google-icon {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cadastro-page__divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--color-woodsmoke-300);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.cadastro-page__divider::before,
+.cadastro-page__divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--color-porsche-200);
+}
+
+.cadastro-page__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.cadastro-page__form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.cadastro-page__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.cadastro-page__label {
+  color: var(--color-porsche-950);
+  font-size: var(--font-size-md);
+  line-height: 1.4;
+}
+
+.cadastro-page__input {
+  width: 100%;
+  min-height: 48px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-woodsmoke-100);
+  background: var(--color-background);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-md);
+  color: var(--color-porsche-950);
+}
+
+.cadastro-page__input::placeholder {
+  color: var(--color-woodsmoke-300);
+}
+
+.cadastro-page__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.cadastro-page__input--password {
+  background: var(--color-porsche-50);
+  border-color: var(--color-porsche-200);
+}
+
+.cadastro-page__actions .button {
+  width: 100%;
+}
+
+.cadastro-page__help {
+  color: var(--color-porsche-950);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.cadastro-page__help a {
+  color: var(--color-primary);
+}
+
+@media (max-width: 48em) {
+  .cadastro-page {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .cadastro-page__container {
+    gap: var(--space-6);
+  }
+
+  .cadastro-page__title {
+    font-size: 1.75rem;
+  }
+}

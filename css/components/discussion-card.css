@@ -15,7 +15,7 @@
 .discussion-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #f0f0f0;
+  border-color: var(--color-woodsmoke-75);
 }
 
 .discussion-card__header {
@@ -63,22 +63,22 @@
 }
 
 .discussion-card__badge--local {
-  background-color: #fbbf24;
+  background-color: var(--color-warning-500);
   color: white;
 }
 
 .discussion-card__badge--recomendacoes {
-  background-color: #f97316;
+  background-color: var(--color-orange-500);
   color: white;
 }
 
 .discussion-card__badge--historias {
-  background-color: #8b5cf6;
+  background-color: var(--color-violet-500);
   color: white;
 }
 
 .discussion-card__badge--eventos {
-  background-color: #10b981;
+  background-color: var(--color-emerald-500);
   color: white;
 }
 
@@ -108,7 +108,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: var(--space-3);
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid var(--color-woodsmoke-75);
 }
 
 .discussion-card__stats {

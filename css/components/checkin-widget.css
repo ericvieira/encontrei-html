@@ -4,7 +4,7 @@
  */
 
 .checkin-widget {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  background: linear-gradient(135deg, var(--color-legacy-amber-100) 0%, var(--color-legacy-amber-200) 100%);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
   text-align: center;
@@ -56,5 +56,5 @@
 }
 
 .checkin-widget__cta:hover {
-  background-color: #1e4976;
+  background-color: var(--color-legacy-blue-700);
 }

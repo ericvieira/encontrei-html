@@ -36,7 +36,7 @@
 .reviews-section__star {
   width: 16px;
   height: 16px;
-  color: #fbbf24;
+  color: var(--color-warning-500);
 }
 
 .reviews-section__score {
@@ -51,7 +51,7 @@
 
 .review-card {
   padding: var(--space-4) 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--color-woodsmoke-75);
 }
 
 .review-card:last-child {
@@ -78,11 +78,11 @@
 .review-card__star {
   width: 14px;
   height: 14px;
-  color: #fbbf24;
+  color: var(--color-warning-500);
 }
 
 .review-card__star--empty {
-  color: #d1d5db;
+  color: var(--color-woodsmoke-200);
 }
 
 .review-card__text {
