@@ -3,43 +3,6 @@
  * Standalone create discussion page styling
  */
 
-.forum-page {
-  background-color: var(--color-background-secondary);
-}
-
-.forum-page__hero {
-  padding: var(--space-20) 0;
-}
-
-.forum-page .container {
-  max-width: 900px;
-}
-
-.forum-page__header {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-  margin-bottom: var(--space-4);
-}
-
-.forum-page__title {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-primary);
-  letter-spacing: var(--letter-spacing-tightest);
-  line-height: var(--line-height-tight);
-}
-
-.forum-page__subtitle {
-  font-size: var(--font-size-lg);
-  color: var(--color-woodsmoke-400);
-  line-height: var(--line-height-normal);
-}
-
-.forum-page__search {
-  margin-bottom: var(--space-6);
-}
-
 .criar-post-wrapper {
   max-width: none;
 }
@@ -186,18 +149,6 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .forum-page__hero {
-    padding: var(--space-10) 0;
-  }
-
-  .forum-page__title {
-    font-size: var(--font-size-2xl);
-  }
-
-  .forum-page__subtitle {
-    font-size: var(--font-size-md);
-  }
-
   .criar-post-card {
     padding: var(--space-5);
   }
