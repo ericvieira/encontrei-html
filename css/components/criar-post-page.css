@@ -162,9 +162,12 @@
 /* Select dropdown styling */
 .form__select-wrapper {
   position: relative;
+  width: 100%;
 }
 
 .form__select {
+  display: block;
+  width: 100%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
