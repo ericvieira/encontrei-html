@@ -12,9 +12,29 @@
   padding: var(--space-20) 0;
 }
 
+.checkin-page__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+}
+
+.checkin-page__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  letter-spacing: var(--letter-spacing-tightest);
+  line-height: var(--line-height-tight);
+}
+
+.checkin-page__subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
 .checkin-form-wrapper {
-  max-width: 600px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .checkin-form {
@@ -39,6 +59,7 @@
   font-size: var(--font-size-base);
   color: var(--color-woodsmoke-500);
   line-height: var(--line-height-normal);
+  max-width: 413px;
 }
 
 .checkin-form__fields {
@@ -98,16 +119,37 @@
 .checkin-form .form__textarea {
   background-color: var(--color-porsche-50);
   border-color: var(--color-porsche-200);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-md);
+  font-family: var(--font-family-primary);
+  color: var(--color-woodsmoke-800);
 }
 
 .checkin-form .form__input:focus,
 .checkin-form .form__textarea:focus {
   border-color: var(--color-primary);
   background-color: white;
+  outline: none;
 }
 
 .checkin-form .form__label {
   color: var(--color-porsche-950);
+}
+
+.checkin-form .form__input {
+  padding: var(--space-4);
+  line-height: 1;
+}
+
+.checkin-form .form__textarea {
+  display: block;
+  width: 100%;
+  padding: var(--space-4);
+  min-height: 119px;
+  line-height: var(--line-height-normal);
+  resize: vertical;
 }
 
 /* Responsive */
@@ -118,6 +160,14 @@
 
   .checkin-form {
     padding: var(--space-5);
+  }
+
+  .checkin-page__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .checkin-page__subtitle {
+    font-size: var(--font-size-md);
   }
 
   .checkin-form__header {
