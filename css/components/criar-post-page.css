@@ -11,6 +11,10 @@
   padding: var(--space-20) 0;
 }
 
+.forum-page .container {
+  max-width: 900px;
+}
+
 .forum-page__header {
   display: flex;
   flex-direction: column;
@@ -33,7 +37,7 @@
 }
 
 .forum-page__search {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .criar-post-wrapper {
@@ -175,16 +179,6 @@
   transform: translateY(-50%);
   pointer-events: none;
   color: var(--color-text-secondary);
-}
-
-.forum-page .search-bar {
-  background-color: var(--color-porsche-50);
-  border-color: var(--color-porsche-200);
-  margin-bottom: 0;
-}
-
-.forum-page .search-bar__icon {
-  color: var(--color-woodsmoke-300);
 }
 
 /* Responsive */

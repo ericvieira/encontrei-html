@@ -14,6 +14,11 @@
   margin-bottom: var(--space-6);
 }
 
+.search-bar:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgb(72 169 166 / 15%);
+}
+
 .search-bar__icon {
   width: 20px;
   height: 20px;
@@ -58,6 +63,12 @@
 .search-bar__filter:hover {
   border-color: var(--color-primary);
   background-color: var(--color-background-secondary);
+}
+
+.search-bar__filter--active {
+  border-color: var(--color-primary);
+  background-color: var(--color-background-secondary);
+  color: var(--color-primary);
 }
 
 .search-bar__filter-icon {

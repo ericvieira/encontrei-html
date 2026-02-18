@@ -70,7 +70,7 @@
    * Sync search with forum page
    */
   function initSearchSync() {
-    const searchInput = document.getElementById('forumSearch');
+    const searchInput = document.getElementById('forum-search');
 
     if (!searchInput) return;
 
